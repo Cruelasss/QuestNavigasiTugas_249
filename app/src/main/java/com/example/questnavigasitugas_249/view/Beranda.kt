@@ -10,8 +10,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.R
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,10 +25,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.questnavigastugas_249.R
-
-
-
+import com.example.questnavigasitugas_249.R
 
 @OptIn (ExperimentalMaterial3Api::class)
 @Composable
@@ -36,7 +33,7 @@ fun HomePage(
     onNextButtonClicked: () -> Unit
 ) {
     Scaffold { isiRuang ->
-        val regar = painterResource(R.Drawable.regar)
+        val regar = painterResource(id = R.drawable.regar)
         Column (
             modifier = Modifier
                 .fillMaxSize()
@@ -71,7 +68,7 @@ fun HomePage(
             Spacer(modifier = Modifier.height(height = 30.dp))
             Button(modifier= Modifier
                 .width(width = 270.dp),
-                onClick = OnSubmitBtnClick,
+                onClick = onNextButtonClicked,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color(0xFFAD6FBF)
                 )
@@ -83,4 +80,3 @@ fun HomePage(
         }
     }
 }
-    )
