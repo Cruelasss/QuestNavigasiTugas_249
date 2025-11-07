@@ -76,6 +76,10 @@ fun HomePage(
                     containerColor = Color(0xFFAD6FBF)
                 )
             )
+            {
+                Text(text = stringResource(id=R.string.submit), modifier = Modifier,
+                    color=Color.White)
+            }
         }
     }
 }
