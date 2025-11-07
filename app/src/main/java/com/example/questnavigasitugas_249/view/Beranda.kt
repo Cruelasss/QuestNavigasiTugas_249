@@ -61,6 +61,11 @@ fun HomePage(
                 fontFamily = FontFamily.Monospace,
                 color = Color(0xFFAD6FBF)
             )
+            Text(text=stringResource(id=R.string.NIM), modifier = Modifier,
+                fontSize = 18.sp,
+                fontFamily = FontFamily.Serif,
+                color=Color.Black
+            )
         }
     }
 }
