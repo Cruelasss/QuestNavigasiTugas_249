@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.R
 import androidx.compose.material3.Scaffold
@@ -65,6 +67,14 @@ fun HomePage(
                 fontSize = 18.sp,
                 fontFamily = FontFamily.Serif,
                 color=Color.Black
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Button(modifier= Modifier
+                .width(width = 270.dp),
+                onClick = OnSubmitBtnClick,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFAD6FBF)
+                )
             )
         }
     }
